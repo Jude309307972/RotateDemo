@@ -7,7 +7,7 @@
 //
 
 #import "IKNavgationViewController.h"
-#import "RotateAbleController.h"
+#import "RotateAblePushController.h"
 
 
 @interface IKNavgationViewController ()
@@ -19,7 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
-
 
 /**
  *  拦截所有push进来的子控制器
@@ -34,23 +33,24 @@
 
 - (BOOL)shouldAutorotate
 {
-    if ([self.topViewController isKindOfClass:[RotateAbleController class]]) {
+    if ([self.topViewController isKindOfClass:[RotateAblePushController class]]) {
         return [self.topViewController shouldAutorotate];
     }
-    return NO; // RotateAbleController自动旋转交给改控制器自己控制，其他控制器则不支撑自动旋转
+    return NO; // RotateAblePushController自动旋转交给改控制器自己控制，其他控制器则不支撑自动旋转
 }
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
-    if ([self.topViewController isKindOfClass:[RotateAbleController class]]) {
+    if ([self.topViewController isKindOfClass:[RotateAblePushController class]]) {
         return [self.topViewController supportedInterfaceOrientations];
     } else {
-        return UIInterfaceOrientationMaskPortrait; // RotateAbleController所支持旋转交给改控制器自己处理，其他控制器则只支持竖屏
+        return UIInterfaceOrientationMaskPortrait; // RotateAblePushController所支持旋转交给改控制器自己处理，其他控制器则只支持竖屏
     }
 }
 
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
 {
+     NSLog(@"%s",__func__);
     return  UIInterfaceOrientationPortrait;
 }
 

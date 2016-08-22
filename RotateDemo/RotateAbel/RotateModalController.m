@@ -28,29 +28,28 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-
 /**
  *  可自动旋转方向
- *
- *  @return <#return value description#>
  */
 - (BOOL)shouldAutorotate
 {
+    //  NSLog(@"%s",__func__);
     return YES;
 }
 
 /**
  *  支持UIInterfaceOrientationMaskAllButUpsideDown方向
- *
- *  @return <#return value description#>
+
  */
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
+     // NSLog(@"%s",__func__);
     return UIInterfaceOrientationMaskAllButUpsideDown;
 }
-
+//
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
 {
+      NSLog(@"%s",__func__);
     return  UIInterfaceOrientationPortrait;
 }
 

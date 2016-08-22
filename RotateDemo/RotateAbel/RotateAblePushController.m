@@ -34,7 +34,7 @@
 
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    if (1) { // 旋转支持方向 ，可加条件旋转；比如我之前的项目是在视频出现之后才支持横屏，否则只能竖屏
+    if (1) { // 旋转支持方向 ，可加条件旋转；比如我之前的项目是在视频流出现之后才支持横屏，否则只能竖屏
         return UIInterfaceOrientationMaskAllButUpsideDown;
     }
     return UIInterfaceOrientationMaskPortrait;

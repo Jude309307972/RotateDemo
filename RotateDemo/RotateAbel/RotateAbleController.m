@@ -34,9 +34,9 @@
     return  YES;
 }
 
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
-{
-    return  UIInterfaceOrientationLandscapeRight;
-}
+//- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+//{
+//    return  UIInterfaceOrientationLandscapeRight;
+//}
 
 @end

@@ -54,7 +54,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhI-FK-rgM">
                                 <rect key="frame" x="120" y="40" width="360" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.96777527610000003" blue="0.2273007004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.25882352939999997" green="0.84705882349999995" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="zkn-sD-odF"/>
                                 </constraints>
@@ -79,7 +79,7 @@
         <!--不可横屏-->
         <scene sceneID="GCC-Ax-ldP">
             <objects>
-                <viewController id="90C-ak-jJh" customClass="MineViewController" sceneMemberID="viewController">
+                <viewController id="90C-ak-jJh" customClass="RotateUnabelModalController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I6t-2s-90f"/>
                         <viewControllerLayoutGuide type="bottom" id="8SG-bM-DNV"/>
@@ -138,7 +138,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXx-Dg-sRg">
                                 <rect key="frame" x="127" y="41" width="360" height="40"/>
-                                <color key="backgroundColor" red="0.43554759100000001" green="1" blue="0.20202701710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.96777527610000003" blue="0.2273007004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4Xa-dJ-NTB"/>
                                 </constraints>
@@ -180,7 +180,7 @@
         <!--可横屏-->
         <scene sceneID="NcU-lZ-n56">
             <objects>
-                <viewController id="Q6v-R4-nVk" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController id="Q6v-R4-nVk" customClass="RotateAbleController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MKU-B1-3Wl"/>
                         <viewControllerLayoutGuide type="bottom" id="Sgb-8T-Ecm"/>
@@ -210,7 +210,7 @@
         <!--可旋转-->
         <scene sceneID="2sy-bD-4lv">
             <objects>
-                <viewController title="可旋转" id="kNB-bf-J0Z" customClass="RotateAbleController" sceneMemberID="viewController">
+                <viewController title="可旋转" id="kNB-bf-J0Z" customClass="RotateAblePushController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eqa-wW-FWV"/>
                         <viewControllerLayoutGuide type="bottom" id="4u8-dH-ptP"/>
@@ -219,16 +219,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWe-zb-RLA">
-                                <rect key="frame" x="211" y="114" width="126" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWe-zb-RLA">
+                                <rect key="frame" x="120" y="84" width="360" height="40"/>
                                 <color key="backgroundColor" red="0.1283867112" green="0.64494554920000002" blue="0.17691014590000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="C7M-FU-8OR"/>
+                                </constraints>
+                                <state key="normal" title="强制横屏"/>
                                 <connections>
-                                    <action selector="rotate:" destination="kNB-bf-J0Z" eventType="touchUpInside" id="Jw2-cS-c84"/>
+                                    <action selector="rotate:" destination="kNB-bf-J0Z" eventType="touchUpInside" id="cfV-kE-F5U"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开放手机横屏功能，旋转手机即可自动横屏" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7e7-DI-iLQ">
+                                <rect key="frame" x="20" y="154" width="560" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="iCd-Cr-Vdh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7e7-DI-iLQ" firstAttribute="leading" secondItem="hdh-tu-nZq" secondAttribute="leadingMargin" id="3et-do-ZZI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7e7-DI-iLQ" secondAttribute="trailing" id="FpB-AL-eT3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SWe-zb-RLA" secondAttribute="trailing" constant="100" id="JeR-oy-5aP"/>
+                            <constraint firstItem="7e7-DI-iLQ" firstAttribute="top" secondItem="SWe-zb-RLA" secondAttribute="bottom" constant="30" id="bym-WA-DbH"/>
+                            <constraint firstItem="SWe-zb-RLA" firstAttribute="leading" secondItem="hdh-tu-nZq" secondAttribute="leadingMargin" constant="100" id="j7Q-Ui-JxJ"/>
+                            <constraint firstItem="SWe-zb-RLA" firstAttribute="top" secondItem="eqa-wW-FWV" secondAttribute="bottom" constant="20" id="jPh-86-FQt"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
