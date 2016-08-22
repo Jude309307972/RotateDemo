@@ -1,5 +1,5 @@
 //
-//  RotateAbleController.h
+//  MineViewController.h
 //  RotateDemo
 //
 //  Created by XUN on 16/8/19.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RotateAbleController : UIViewController
+@interface RotateUnableController : UIViewController
 
 @end

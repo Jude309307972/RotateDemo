@@ -6,13 +6,13 @@
 //  Copyright © 2016年 Jude. All rights reserved.
 //
 
-#import "RotateAbleController.h"
+#import "RotateAblePushController.h"
 
-@interface RotateAbleController ()
+@interface RotateAblePushController ()
 
 @end
 
-@implementation RotateAbleController
+@implementation RotateAblePushController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,7 +25,7 @@
 }
 
 
-- (IBAction)rotate:(UIButton *)sender {
+- (IBAction)rotate:(UIButton *)sender { // 强制横屏
     if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
         NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeRight];
         [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
@@ -34,14 +34,15 @@
 
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    if (1) {
+    if (1) { // 旋转支持方向 ，可加条件旋转；比如我之前的项目是在视频出现之后才支持横屏，否则只能竖屏
         return UIInterfaceOrientationMaskAllButUpsideDown;
     }
     return UIInterfaceOrientationMaskPortrait;
 }
 
-
-
+/**
+ *  支持自动旋转
+ */
 - (BOOL)shouldAutorotate
 {
     return  YES;

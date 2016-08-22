@@ -6,13 +6,13 @@
 //  Copyright © 2016年 Jude. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "RotateAbleController.h"
 
-@interface MainViewController ()
+@interface RotateAbleController ()
 
 @end
 
-@implementation MainViewController
+@implementation RotateAbleController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

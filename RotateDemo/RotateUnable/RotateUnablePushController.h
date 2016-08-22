@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RotateUnableController : UIViewController
+@interface RotateUnablePushController: UIViewController
 
 @end

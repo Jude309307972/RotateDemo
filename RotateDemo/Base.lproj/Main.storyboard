@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Smj-qO-mZz">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar View Controller-->
@@ -23,11 +23,11 @@
             </objects>
             <point key="canvasLocation" x="-1538" y="-130"/>
         </scene>
-        <!--主页-->
+        <!--可横屏-->
         <scene sceneID="dHR-bj-ls5">
             <objects>
                 <navigationController id="QNv-bx-l5I" customClass="IKNavgationViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="主页" id="kpH-bF-hAM"/>
+                    <tabBarItem key="tabBarItem" title="可横屏" id="kpH-bF-hAM"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IRY-Bu-Xp2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -38,7 +38,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="es0-Q4-tKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-620" y="-1311"/>
+            <point key="canvasLocation" x="-1036" y="-1367"/>
         </scene>
         <!--Rotate Modal Controller-->
         <scene sceneID="5jD-zd-0cu">
@@ -52,22 +52,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhI-FK-rgM">
-                                <rect key="frame" x="267" y="59" width="99" height="63"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhI-FK-rgM">
+                                <rect key="frame" x="120" y="40" width="360" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.96777527610000003" blue="0.2273007004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="zkn-sD-odF"/>
+                                </constraints>
+                                <state key="normal" title="Dismiss"/>
                                 <connections>
                                     <action selector="dismiss" destination="Ba1-Gk-bxC" eventType="touchUpInside" id="MEl-QZ-hA0"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jhI-FK-rgM" firstAttribute="leading" secondItem="7ni-IX-Exg" secondAttribute="leadingMargin" constant="100" id="J7C-Ph-AFh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jhI-FK-rgM" secondAttribute="trailing" constant="100" id="Ktl-hC-WCk"/>
+                            <constraint firstItem="jhI-FK-rgM" firstAttribute="top" secondItem="LEL-cC-EBg" secondAttribute="bottom" constant="20" id="hFv-cO-RZz"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="roI-xp-PjS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="352" y="-1428"/>
+            <point key="canvasLocation" x="220" y="-1596"/>
         </scene>
-        <!--我的-->
+        <!--不可横屏-->
         <scene sceneID="GCC-Ax-ldP">
             <objects>
                 <viewController id="90C-ak-jJh" customClass="MineViewController" sceneMemberID="viewController">
@@ -80,8 +89,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.96777527610000003" blue="0.2273007004" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="我的" id="DmU-MO-IKb">
-                        <barButtonItem key="leftBarButtonItem" title="modal" id="HSo-eT-zj0"/>
+                    <navigationItem key="navigationItem" title="不可横屏" id="DmU-MO-IKb">
+                        <barButtonItem key="leftBarButtonItem" title="modal" id="HSo-eT-zj0">
+                            <connections>
+                                <segue destination="eLn-v0-UiJ" kind="presentation" id="iBL-he-cxt"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="push" id="3JP-r3-WAZ">
                             <connections>
                                 <segue destination="cDK-m4-HzM" kind="show" id="gXQ-Ve-Hua"/>
@@ -91,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBk-VY-eiF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-45" y="-171"/>
+            <point key="canvasLocation" x="-433" y="-203"/>
         </scene>
         <!--不可旋转-->
         <scene sceneID="SX6-MJ-M1o">
@@ -109,13 +122,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6AG-hp-Tyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="18"/>
+            <point key="canvasLocation" x="560" y="18"/>
         </scene>
-        <!--我的-->
+        <!--Rotate Unabel Modal Controller-->
+        <scene sceneID="vnI-A6-583">
+            <objects>
+                <viewController id="eLn-v0-UiJ" customClass="RotateUnabelModalController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2ug-bG-SKs"/>
+                        <viewControllerLayoutGuide type="bottom" id="bjW-HE-AML"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pbC-MQ-B4v">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXx-Dg-sRg">
+                                <rect key="frame" x="127" y="41" width="360" height="40"/>
+                                <color key="backgroundColor" red="0.43554759100000001" green="1" blue="0.20202701710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4Xa-dJ-NTB"/>
+                                </constraints>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <action selector="dismiss" destination="eLn-v0-UiJ" eventType="touchUpInside" id="Jr9-fZ-3az"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YXx-Dg-sRg" firstAttribute="leading" secondItem="pbC-MQ-B4v" secondAttribute="leadingMargin" constant="100" id="DHF-nE-Epq"/>
+                            <constraint firstItem="YXx-Dg-sRg" firstAttribute="top" secondItem="2ug-bG-SKs" secondAttribute="bottom" constant="20" id="WDR-Ik-P8G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YXx-Dg-sRg" secondAttribute="trailing" constant="100" id="aYk-GW-0I2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cns-GS-t9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154" y="485"/>
+        </scene>
+        <!--可横屏-->
         <scene sceneID="Px3-xg-Hda">
             <objects>
                 <navigationController id="Eb5-Bm-Kgu" customClass="IKNavgationViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" id="lhn-dX-rvp"/>
+                    <tabBarItem key="tabBarItem" title="可横屏" id="lhn-dX-rvp"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JHx-sy-yqA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -126,9 +175,9 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cI8-7B-bq3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-600" y="741"/>
+            <point key="canvasLocation" x="-1036" y="645"/>
         </scene>
-        <!--主页-->
+        <!--可横屏-->
         <scene sceneID="NcU-lZ-n56">
             <objects>
                 <viewController id="Q6v-R4-nVk" customClass="MainViewController" sceneMemberID="viewController">
@@ -141,7 +190,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.25882352939999997" green="0.84705882349999995" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="主页" id="OSZ-u3-dt3">
+                    <navigationItem key="navigationItem" title="可横屏" id="OSZ-u3-dt3">
                         <barButtonItem key="leftBarButtonItem" title="modal" id="r9I-JH-j6P">
                             <connections>
                                 <segue destination="Ba1-Gk-bxC" kind="presentation" id="HxZ-c6-Dbe"/>
@@ -156,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUx-RY-0XV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="49" y="-1000"/>
+            <point key="canvasLocation" x="-282" y="-1142"/>
         </scene>
         <!--可旋转-->
         <scene sceneID="2sy-bD-4lv">
@@ -186,7 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zpM-IW-oIz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="810" y="-1079"/>
+            <point key="canvasLocation" x="818" y="-1003"/>
         </scene>
     </scenes>
 </document>

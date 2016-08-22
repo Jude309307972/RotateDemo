@@ -14,11 +14,12 @@
 		A16F14E71D66FBED00559EE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16F14E51D66FBED00559EE4 /* LaunchScreen.storyboard */; };
 		A16F15021D67003C00559EE4 /* IKNavgationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16F14FF1D67003C00559EE4 /* IKNavgationViewController.m */; };
 		A16F15031D67003C00559EE4 /* IKTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16F15011D67003C00559EE4 /* IKTabBarViewController.m */; };
-		A16F15091D67015E00559EE4 /* RotateAbleController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16F15071D67015E00559EE4 /* RotateAbleController.m */; };
-		A16F150E1D67016900559EE4 /* RotateUnableController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16F150C1D67016900559EE4 /* RotateUnableController.m */; };
-		A16F15121D67018100559EE4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16F15111D67018100559EE4 /* MainViewController.m */; };
-		A16F15151D67018B00559EE4 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16F15141D67018B00559EE4 /* MineViewController.m */; };
-		A16F15181D67166A00559EE4 /* RotateModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16F15171D67166A00559EE4 /* RotateModalController.m */; };
+		A17534FB1D6AB02700DAB8DE /* RotateAbleController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17534EF1D6AB02700DAB8DE /* RotateAbleController.m */; };
+		A17534FE1D6AB02700DAB8DE /* RotateUnableController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17534F61D6AB02700DAB8DE /* RotateUnableController.m */; };
+		A17534FF1D6AB02700DAB8DE /* RotateUnabelModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17534F81D6AB02700DAB8DE /* RotateUnabelModalController.m */; };
+		A17535001D6AB02700DAB8DE /* RotateUnablePushController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17534FA1D6AB02700DAB8DE /* RotateUnablePushController.m */; };
+		A17535051D6AC81B00DAB8DE /* RotateAblePushController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17535021D6AC81B00DAB8DE /* RotateAblePushController.m */; };
+		A17535061D6AC81B00DAB8DE /* RotateModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17535041D6AC81B00DAB8DE /* RotateModalController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,16 +35,18 @@
 		A16F14FF1D67003C00559EE4 /* IKNavgationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKNavgationViewController.m; sourceTree = "<group>"; };
 		A16F15001D67003C00559EE4 /* IKTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKTabBarViewController.h; sourceTree = "<group>"; };
 		A16F15011D67003C00559EE4 /* IKTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKTabBarViewController.m; sourceTree = "<group>"; };
-		A16F15061D67015E00559EE4 /* RotateAbleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateAbleController.h; sourceTree = "<group>"; };
-		A16F15071D67015E00559EE4 /* RotateAbleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateAbleController.m; sourceTree = "<group>"; };
-		A16F150B1D67016900559EE4 /* RotateUnableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateUnableController.h; sourceTree = "<group>"; };
-		A16F150C1D67016900559EE4 /* RotateUnableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateUnableController.m; sourceTree = "<group>"; };
-		A16F15101D67018100559EE4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		A16F15111D67018100559EE4 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		A16F15131D67018B00559EE4 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
-		A16F15141D67018B00559EE4 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
-		A16F15161D67166A00559EE4 /* RotateModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateModalController.h; sourceTree = "<group>"; };
-		A16F15171D67166A00559EE4 /* RotateModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateModalController.m; sourceTree = "<group>"; };
+		A17534EE1D6AB02700DAB8DE /* RotateAbleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateAbleController.h; sourceTree = "<group>"; };
+		A17534EF1D6AB02700DAB8DE /* RotateAbleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateAbleController.m; sourceTree = "<group>"; };
+		A17534F51D6AB02700DAB8DE /* RotateUnableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateUnableController.h; sourceTree = "<group>"; };
+		A17534F61D6AB02700DAB8DE /* RotateUnableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateUnableController.m; sourceTree = "<group>"; };
+		A17534F71D6AB02700DAB8DE /* RotateUnabelModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateUnabelModalController.h; sourceTree = "<group>"; };
+		A17534F81D6AB02700DAB8DE /* RotateUnabelModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateUnabelModalController.m; sourceTree = "<group>"; };
+		A17534F91D6AB02700DAB8DE /* RotateUnablePushController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateUnablePushController.h; sourceTree = "<group>"; };
+		A17534FA1D6AB02700DAB8DE /* RotateUnablePushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateUnablePushController.m; sourceTree = "<group>"; };
+		A17535011D6AC81B00DAB8DE /* RotateAblePushController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateAblePushController.h; sourceTree = "<group>"; };
+		A17535021D6AC81B00DAB8DE /* RotateAblePushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateAblePushController.m; sourceTree = "<group>"; };
+		A17535031D6AC81B00DAB8DE /* RotateModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateModalController.h; sourceTree = "<group>"; };
+		A17535041D6AC81B00DAB8DE /* RotateModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateModalController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +79,8 @@
 		A16F14D61D66FBED00559EE4 /* RotateDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A16F15051D67012200559EE4 /* Mine */,
-				A16F15041D67011700559EE4 /* Main */,
+				A17534ED1D6AB02700DAB8DE /* RotateAbel */,
+				A17534F41D6AB02700DAB8DE /* RotateUnable */,
 				A16F14FD1D67003C00559EE4 /* BasicVC */,
 				A16F14DA1D66FBED00559EE4 /* AppDelegate.h */,
 				A16F14DB1D66FBED00559EE4 /* AppDelegate.m */,
@@ -109,28 +112,30 @@
 			path = BasicVC;
 			sourceTree = "<group>";
 		};
-		A16F15041D67011700559EE4 /* Main */ = {
+		A17534ED1D6AB02700DAB8DE /* RotateAbel */ = {
 			isa = PBXGroup;
 			children = (
-				A16F15061D67015E00559EE4 /* RotateAbleController.h */,
-				A16F15071D67015E00559EE4 /* RotateAbleController.m */,
-				A16F15101D67018100559EE4 /* MainViewController.h */,
-				A16F15111D67018100559EE4 /* MainViewController.m */,
-				A16F15161D67166A00559EE4 /* RotateModalController.h */,
-				A16F15171D67166A00559EE4 /* RotateModalController.m */,
+				A17535011D6AC81B00DAB8DE /* RotateAblePushController.h */,
+				A17535021D6AC81B00DAB8DE /* RotateAblePushController.m */,
+				A17535031D6AC81B00DAB8DE /* RotateModalController.h */,
+				A17535041D6AC81B00DAB8DE /* RotateModalController.m */,
+				A17534EE1D6AB02700DAB8DE /* RotateAbleController.h */,
+				A17534EF1D6AB02700DAB8DE /* RotateAbleController.m */,
 			);
-			path = Main;
+			path = RotateAbel;
 			sourceTree = "<group>";
 		};
-		A16F15051D67012200559EE4 /* Mine */ = {
+		A17534F41D6AB02700DAB8DE /* RotateUnable */ = {
 			isa = PBXGroup;
 			children = (
-				A16F150B1D67016900559EE4 /* RotateUnableController.h */,
-				A16F150C1D67016900559EE4 /* RotateUnableController.m */,
-				A16F15131D67018B00559EE4 /* MineViewController.h */,
-				A16F15141D67018B00559EE4 /* MineViewController.m */,
+				A17534F51D6AB02700DAB8DE /* RotateUnableController.h */,
+				A17534F61D6AB02700DAB8DE /* RotateUnableController.m */,
+				A17534F71D6AB02700DAB8DE /* RotateUnabelModalController.h */,
+				A17534F81D6AB02700DAB8DE /* RotateUnabelModalController.m */,
+				A17534F91D6AB02700DAB8DE /* RotateUnablePushController.h */,
+				A17534FA1D6AB02700DAB8DE /* RotateUnablePushController.m */,
 			);
-			path = Mine;
+			path = RotateUnable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,14 +210,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A16F14DC1D66FBED00559EE4 /* AppDelegate.m in Sources */,
-				A16F15091D67015E00559EE4 /* RotateAbleController.m in Sources */,
+				A17535001D6AB02700DAB8DE /* RotateUnablePushController.m in Sources */,
 				A16F15021D67003C00559EE4 /* IKNavgationViewController.m in Sources */,
 				A16F15031D67003C00559EE4 /* IKTabBarViewController.m in Sources */,
-				A16F15121D67018100559EE4 /* MainViewController.m in Sources */,
+				A17535061D6AC81B00DAB8DE /* RotateModalController.m in Sources */,
+				A17534FB1D6AB02700DAB8DE /* RotateAbleController.m in Sources */,
 				A16F14D91D66FBED00559EE4 /* main.m in Sources */,
-				A16F150E1D67016900559EE4 /* RotateUnableController.m in Sources */,
-				A16F15181D67166A00559EE4 /* RotateModalController.m in Sources */,
-				A16F15151D67018B00559EE4 /* MineViewController.m in Sources */,
+				A17534FE1D6AB02700DAB8DE /* RotateUnableController.m in Sources */,
+				A17535051D6AC81B00DAB8DE /* RotateAblePushController.m in Sources */,
+				A17534FF1D6AB02700DAB8DE /* RotateUnabelModalController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +373,7 @@
 				A16F14ED1D66FBED00559EE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

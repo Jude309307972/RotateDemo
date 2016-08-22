@@ -32,16 +32,12 @@
     [super pushViewController:viewController animated:animated];
 }
 
-/**
- *  只需RotateAbleController支持横屏，其他不需要支持
- *
- */
 - (BOOL)shouldAutorotate
 {
     if ([self.topViewController isKindOfClass:[RotateAbleController class]]) {
-        return YES;
+        return [self.topViewController shouldAutorotate];
     }
-    return NO;
+    return NO; // RotateAbleController自动旋转交给改控制器自己控制，其他控制器则不支撑自动旋转
 }
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
@@ -49,21 +45,13 @@
     if ([self.topViewController isKindOfClass:[RotateAbleController class]]) {
         return [self.topViewController supportedInterfaceOrientations];
     } else {
-        return UIInterfaceOrientationMaskPortrait;
+        return UIInterfaceOrientationMaskPortrait; // RotateAbleController所支持旋转交给改控制器自己处理，其他控制器则只支持竖屏
     }
 }
 
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
 {
-    return  UIInterfaceOrientationLandscapeRight;
+    return  UIInterfaceOrientationPortrait;
 }
-
-- (void)back
-{
-    [self popViewControllerAnimated:YES];
-}
-
-
-
 
 @end

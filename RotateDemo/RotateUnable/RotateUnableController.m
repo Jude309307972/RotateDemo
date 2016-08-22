@@ -6,13 +6,13 @@
 //  Copyright © 2016年 Jude. All rights reserved.
 //
 
-#import "MineViewController.h"
+#import "RotateUnableController.h"
 
-@interface MineViewController ()
+@interface RotateUnableController ()
 
 @end
 
-@implementation MineViewController
+@implementation RotateUnableController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
