@@ -1,8 +1,9 @@
 # RotateDemo 
 * 该demo以常见的TabbarController---NavController ---Controller控制器结构为例。
- 1. 项目工程勾选支持的屏幕方向
+
+ ##### 1. 项目工程勾选支持的屏幕方向
 ![image](http://upload-images.jianshu.io/upload_images/2800830-55c9c2eca9260396.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
- 2. tabbar
+#### 2. tabbar
 
 ```
  shouldAutorotate  supportedInterfaceOrientations调用顺序最底层容器控制器有优先权级别，先判断tabbarController,再判断navgationController，在具体的某个contoller
@@ -22,7 +23,7 @@
     return UIInterfaceOrientationMaskPortrait; // tabbar第一栏控制器所支持旋转方向交给下级控制器处理，其他栏只支持竖屏方向
 }
 ```
-3. nav
+####3. nav
 
 ```
 - (BOOL)shouldAutorotate
@@ -43,7 +44,7 @@
 }
 ```
 
-  4. 具体某个需横屏的控制器
+#### 4. 具体某个需横屏的控制器
 
 ```
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
