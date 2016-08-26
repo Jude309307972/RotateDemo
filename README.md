@@ -1,7 +1,8 @@
 # RotateDemo 
 * 该demo以常见的TabbarController---NavController ---Controller控制器结构为例。
 
- ##### 1. 项目工程勾选支持的屏幕方向
+
+##### 1. 项目工程勾选支持的屏幕方向
 ![image](http://upload-images.jianshu.io/upload_images/2800830-55c9c2eca9260396.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 #### 2. tabbar
 
